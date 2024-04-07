@@ -1,0 +1,18 @@
+[Unit]
+Description=UNICC Flask Server
+After=network.target
+
+[Service]
+Type=simple
+User=reap
+Group=reap
+WorkingDirectory=/home/reap/jupyter/experiments/htmx_python_chatbot/
+ExecStart=/usr/bin/env /home/reap/.local/bin/flask --app server run --host=0.0.0.0
+Restart=always
+RestartSec=10
+PrivateTmp=true
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
