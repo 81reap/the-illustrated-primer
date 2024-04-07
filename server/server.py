@@ -7,8 +7,21 @@ import os
 import torch
 import re
 
+
+import torch
+from transformers import pipeline
+from transformers.utils import is_flash_attn_2_available
+
 app = Flask(__name__)
 CORS(app)
+
+device = "cpu" 
+dtype = torch.float16
+if torch.cuda.is_available():
+    device = "cuda"
+    dtype = torch.bfloat16
+elif torch.backends.mps.is_available():
+    device = "mps"
 
 # todo :: bundle this into a docker image
 # todo :: We can use GPTQ here to compress the model before we even load it. However this requires GCC to be downgraded
@@ -16,24 +29,27 @@ quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_use_double_quant=True,
     bnb_4bit_quant_type="nf4",
-    bnb_4bit_compute_dtype=torch.bfloat16,)
-
-device = "cpu" 
-if torch.cuda.is_available():
-    device = "cuda"
-elif torch.backends.mps.is_available():
-    device = "mps"
+    bnb_4bit_compute_dtype=dtype,)
 
 model = AutoModelForCausalLM.from_pretrained(
     "Nexusflow/Starling-LM-7B-beta", 
     quantization_config=quantization_config,
     trust_remote_code=True,
-    torch_dtype=torch.bfloat16,
+    torch_dtype=dtype,
     # todo :: This requires GCC to be downgraded as the latest CUDA uses a newer GCC than this can handle
     # https://huggingface.co/docs/transformers/perf_infer_gpu_one#flashattention-2
-    # attn_implementation="flash_attention_2",
+    attn_implementation= "flash_attention_2" if is_flash_attn_2_available() else "sdpa",
 )#.to(device)
 tokenizer = AutoTokenizer.from_pretrained("Nexusflow/Starling-LM-7B-beta", trust_remote_code=True)
+
+audio_to_text_pipeline = pipeline(
+    "automatic-speech-recognition",
+    model="openai/whisper-large-v3", # select checkpoint from https://huggingface.co/openai/whisper-large-v3#model-details
+    torch_dtype=dtype,
+    device=device,#"cuda:0",
+    #model_kwargs={"attn_implementation": "sdpa"}
+    model_kwargs={"attn_implementation": "flash_attention_2"} if is_flash_attn_2_available() else {"attn_implementation": "sdpa"},
+)
 
 def get_db_connection(db_name):
     db_path = f"{db_name}.db"
@@ -74,7 +90,7 @@ def chat():
         add_generation_prompt=True,
         #return_attention_mask=False,
         return_tensors="pt",
-        torch_dtype=torch.bfloat16,)#.to(device)
+        torch_dtype=dtype,)#.to(device)
     generated_ids = model.generate(
         model_inputs, 
         max_new_tokens=512, 
@@ -98,6 +114,21 @@ def chat():
     conn.commit()
 
     return jsonify({'response': last_answer})
+
+@app.route('/api/chat/audio', methods=['POST'])
+def chatAudio():
+    # Read the audio file from the request
+    audio_file = request.files['messageFile']
+    audio_file.save('./tmpAudio.mp3')
+    
+    outputs = audio_to_text_pipeline(
+        './tmpAudio.mp3',
+        chunk_length_s=30,
+        batch_size=24,
+        return_timestamps=True,
+    )
+    
+    return jsonify({'response': outputs['text']})
 
 @app.route('/api/history', methods=['GET'])
 def get_history():
