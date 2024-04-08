@@ -1,0 +1,46 @@
+[
+  {
+    "question": "In your everyday life, you have probably noticed that certain instruments are ideal for certain situations. For example, you would use a spoon rather than a fork to eat soup because a spoon is shaped for scooping, while soup would slip between the tines of a fork. The use of ideal instruments also applies in science. In what situation(s) would the use of a light microscope be ideal, and why?",
+    "answer": "A light microscope would be ideal for viewing living cells and organisms. Since it uses visible light, the specimen does not need to be killed, fixed, or dehydrated to be viewed. Light microscopes provide sufficient magnification to see cells and some cellular details while still preserving the viability of the specimen."
+  },
+  {
+    "question": "In what situation(s) would the use of a scanning electron microscope be ideal, and why?", 
+    "answer": "A scanning electron microscope would be ideal for viewing the surface details of cells or other small specimens. It uses a beam of electrons to scan the surface, providing very high magnification and resolution. This allows intricate surface structures to be seen in great detail. However, the specimen must be fixed, dehydrated, and coated in metal to be viewed under the high vacuum conditions of the microscope."
+  },
+  {
+    "question": "In what situation(s) would a transmission electron microscope be ideal, and why?",
+    "answer": "A transmission electron microscope would be ideal for viewing the internal ultrastructure of cells. It uses a beam of electrons that passes through a thin section of the specimen, providing extremely high magnification and resolution. This allows organelles and other internal cellular structures to be seen in great detail. However, the specimen must be fixed, dehydrated, embedded in resin, and sliced into very thin sections to be viewed, so it is not compatible with living specimens."
+  },
+  {
+    "question": "What are the advantages and disadvantages of each of these types of microscopes?",
+    "answer": "Light microscopes have the advantage of being compatible with living specimens and are relatively inexpensive. However, their magnification and resolution are limited compared to electron microscopes. Scanning electron microscopes provide very high magnification and resolution of surface structures but cannot view internal details and are not compatible with living specimens. Transmission electron microscopes provide the highest magnification and resolution and can view internal cellular ultrastructure, but require extensive specimen preparation and are also incompatible with living specimens."
+  },
+  {
+    "question": "Explain how the formation of an adult human follows the cell theory.",
+    "answer": "The cell theory states that all living things are composed of one or more cells, the cell is the basic unit of life, and new cells arise from existing cells. The formation of an adult human follows this. We start as a single cell, the zygote, which divides repeatedly to produce the trillions of cells that make up an adult body. As the embryo develops, cells differentiate into the many cell types that make up the tissues and organs of the body. But at every stage, the body is composed of cells that arose from pre-existing cells, in accordance with the cell theory."
+  },
+  {
+    "question": "Antibiotics are medicines that are used to fight bacterial infections. These medicines kill prokaryotic cells without harming human cells. What part or parts of the bacterial cell do you think antibiotics target? Why?",
+    "answer": "Antibiotics likely target structures that are unique to bacterial cells, such as the cell wall, bacterial ribosomes, or certain metabolic pathways. Bacterial cell walls are different from the cell walls of plants and fungi. Bacterial ribosomes are structurally different from eukaryotic ribosomes. And bacteria may have metabolic pathways that human cells do not have. By targeting these unique bacterial structures or processes, antibiotics can kill bacterial cells without damaging human cells, which lack these targets."
+  },
+  {
+    "question": "Explain why not all microbes are harmful.",
+    "answer": "Not all microbes are harmful because many of them perform vital roles in ecosystems and in the human body. In the environment, microbes are essential for nutrient cycling and decomposition of organic matter. In the human body, the microbiome - the collection of microbes living in and on the body - helps with digestion, nutrient absorption, and training the immune system. Some microbes even produce substances we use, like antibiotics and food products. Only a small fraction of microbial species are actually pathogenic and cause disease."
+  },
+  {
+    "question": "You already know that ribosomes are abundant in red blood cells. In what other cells of the body would you find them in great abundance? Why?",
+    "answer": "Ribosomes would be abundant in any cells that are actively synthesizing large amounts of proteins. This would include cells that secrete proteins, like pancreatic cells that make digestive enzymes, immune system cells that make antibodies, and cells in glands that make hormones. It would also include rapidly dividing cells, which need to make proteins for new cell components, like skin cells, blood cell precursors in bone marrow, and cells in the lining of the intestine. Muscle cells would also have many ribosomes to make the proteins needed for muscle contraction. In general, the more metabolically active a cell is and the more proteins it is synthesizing, the more ribosomes it will have."
+  },
+  {
+    "question": "What are the structural and functional similarities and differences between mitochondria and chloroplasts?",
+    "answer": "Mitochondria and chloroplasts are similar in that they are both organelles with a double membrane structure, they have their own circular DNA, and they have ribosomes and make some of their own proteins. They are also both involved in energy transformation - mitochondria in cellular respiration and chloroplasts in photosynthesis. However, they also have differences. Mitochondria have an inner membrane with many folds called cristae, while chloroplasts have stacks of thylakoids where photosynthesis takes place. Chloroplasts also have chlorophyll and other pigments for capturing light energy, which mitochondria lack. Functionally, mitochondria break down organic compounds to generate ATP, while chloroplasts use light energy to synthesize organic compounds from carbon dioxide and water."
+  },
+  {
+    "question": "Why are plasma membranes arranged as a bilayer rather than a monolayer?",
+    "answer": "Plasma membranes are arranged as a bilayer because this structure provides the ideal combination of stability and fluidity. The hydrophobic tails of the phospholipids face inward, shielded from water, while the hydrophilic heads face outward, interacting with water. This arrangement makes the membrane relatively impermeable to water-soluble molecules. If it were a monolayer, the hydrophobic tails would be exposed to water on one side, which is energetically unfavorable. The bilayer also allows membrane proteins to be embedded in the membrane, with hydrophobic portions within the hydrophobic core and hydrophilic portions protruding from the surface. The bilayer structure also provides fluidity, allowing the membrane components to move laterally. This is important for processes like cell signaling and transport."
+  },
+  {
+    "question": "In the context of cell biology, what do we mean by form follows function? What are at least two examples of this concept?",
+    "answer": "In cell biology, \"form follows function\" means that the structure of a cellular component reflects its function. Two examples are: \n1) Microvilli in the small intestine. These tiny projections of the cell membrane increase the surface area for absorption of nutrients. Their form (protrusions) follows their function (increasing surface area). \n2) The biconcave shape of red blood cells. This shape provides a high surface area to volume ratio, facilitating gas exchange, and allows the cells to flow easily through narrow capillaries. Again, their form (biconcave disc) follows their function (efficient gas exchange and flow through capillaries)."
+  }
+]

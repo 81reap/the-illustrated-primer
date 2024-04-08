@@ -1,0 +1,46 @@
+[
+  {
+    "question": "What is the overall outcome of the light reactions in photosynthesis?",
+    "answer": "The overall outcome of the light reactions in photosynthesis is the conversion of light energy into chemical energy in the form of ATP and NADPH. These energy-carrying molecules are then used to power the light-independent reactions and the synthesis of carbohydrates from carbon dioxide."
+  },
+  {
+    "question": "Why are carnivores, such as lions, dependent on photosynthesis to survive?",
+    "answer": "Carnivores like lions are dependent on photosynthesis to survive because the energy stored in the chemical bonds of their prey can be traced back to the process of photosynthesis. The prey animals obtain their energy by consuming plants or other animals that feed on plants, which are the primary producers that convert sunlight into chemical energy through photosynthesis."
+  },
+  {
+    "question": "Why are energy carriers thought of as either \"full\" or \"empty\"?",
+    "answer": "Energy carriers like ATP and NADPH are thought of as either \"full\" or \"empty\" because they can exist in two different states: a high-energy state and a low-energy state. When these molecules are \"full,\" they are rich in energy and can be used to power chemical reactions. After the energy is released, they become \"empty\" and must return to the light-dependent reactions to be recharged with energy."
+  },
+  {
+    "question": "Describe how the grey wolf population would be impacted by a volcanic eruption that spewed a dense ash cloud that blocked sunlight in a section of Yellowstone National Park.",
+    "answer": "If a volcanic eruption spewed a dense ash cloud that blocked sunlight in a section of Yellowstone National Park, it would negatively impact the grey wolf population. The reduced sunlight would hinder photosynthesis in plants, leading to a decrease in plant biomass. This would affect the herbivores that feed on the plants, causing their populations to decline. As a result, the grey wolves, which are at the top of the food chain, would face a shortage of prey, potentially leading to a decrease in their population size."
+  },
+  {
+    "question": "How does the closing of the stomata limit photosynthesis?",
+    "answer": "The closing of stomata limits photosynthesis by reducing the amount of carbon dioxide that can enter the leaf. Carbon dioxide is one of the key reactants in photosynthesis, and its availability is essential for the light-independent reactions to proceed. When stomata close, the supply of carbon dioxide is reduced, which in turn slows down the rate of photosynthesis."
+  },
+  {
+    "question": "Describe the pathway of electron transfer from photosystem II to photosystem I in light-dependent reactions.",
+    "answer": "In the light-dependent reactions, electrons are transferred from photosystem II (PSII) to photosystem I (PSI) through an electron transport chain. Light energy is used to excite electrons in PSII, which are then passed to the primary electron acceptor. These electrons flow through a series of proteins and electron carriers, including plastoquinone, the cytochrome complex, and plastocyanin. As the electrons move through these carriers, they lose energy, which is used to pump hydrogen ions into the thylakoid lumen. Finally, the electrons are delivered to PSI, where they are re-energized by light before being used to reduce NADP+ to NADPH."
+  },
+  {
+    "question": "What are the roles of ATP and NADPH in photosynthesis?",
+    "answer": "ATP and NADPH are the energy-rich molecules produced during the light-dependent reactions of photosynthesis. They play crucial roles in the light-independent reactions (Calvin cycle). ATP provides the energy needed to drive the chemical reactions that convert carbon dioxide into carbohydrates. NADPH, on the other hand, serves as a reducing agent, donating electrons to the chemical reactions that reduce 3-phosphoglyceric acid (3-PGA) into glyceraldehyde 3-phosphate (G3P), which is then used to synthesize glucose and other organic compounds."
+  },
+  {
+    "question": "How and why would the end products of photosynthesis be changed if a plant had a mutation that eliminated its photosystem II complex?",
+    "answer": "If a plant had a mutation that eliminated its photosystem II (PSII) complex, the end products of photosynthesis would be significantly altered. PSII is responsible for splitting water molecules and releasing electrons, which are then used to generate ATP and NADPH. Without a functional PSII, the plant would be unable to perform the light-dependent reactions, and consequently, no ATP or NADPH would be produced. This would halt the light-independent reactions (Calvin cycle), as these energy-rich molecules are essential for the synthesis of carbohydrates. As a result, the plant would not be able to produce glucose or other organic compounds, severely impacting its growth and survival."
+  },
+  {
+    "question": "Why is the third stage of the Calvin cycle called the regeneration stage?",
+    "answer": "The third stage of the Calvin cycle is called the regeneration stage because it involves the regeneration of ribulose bisphosphate (RuBP), the starting molecule of the cycle. In this stage, a portion of the glyceraldehyde 3-phosphate (G3P) produced during the second stage is used to regenerate RuBP. This regeneration process ensures that the cycle can continue, as RuBP is necessary for the fixation of carbon dioxide in the first stage of the Calvin cycle. By continuously regenerating RuBP, the plant can maintain a steady supply of this essential molecule, allowing for the ongoing fixation of carbon dioxide and the production of carbohydrates."
+  },
+  {
+    "question": "Which part of the light-independent reactions would be affected if a cell could not produce the enzyme RuBisCO?",
+    "answer": "If a cell could not produce the enzyme RuBisCO (ribulose-1,5-bisphosphate carboxylase/oxygenase), the first stage of the light-independent reactions, known as the carbon fixation stage, would be severely affected. RuBisCO is the key enzyme responsible for catalyzing the reaction between carbon dioxide (CO2) and ribulose bisphosphate (RuBP) to form two molecules of 3-phosphoglyceric acid (3-PGA). Without RuBisCO, the cell would be unable to fix carbon dioxide into organic compounds, effectively halting the Calvin cycle and the production of carbohydrates. This would have a detrimental effect on the plant's growth and survival, as it would be unable to synthesize the necessary organic molecules for energy storage and structural components."
+  },
+  {
+    "question": "Why does it take three turns of the Calvin cycle to produce G3P, the initial product of photosynthesis?",
+    "answer": "It takes three turns of the Calvin cycle to produce one molecule of glyceraldehyde 3-phosphate (G3P), the initial product of photosynthesis, because each turn of the cycle only fixes one carbon dioxide molecule. In the carbon fixation stage, one molecule of CO2 reacts with one molecule of ribulose bisphosphate (RuBP), forming two molecules of 3-phosphoglyceric acid (3-PGA). These 3-PGA molecules are then reduced to form G3P in the reduction stage. However, out of the six G3P molecules produced from three turns of the cycle, only one is exported from the chloroplast to be used for the synthesis of glucose and other organic compounds. The remaining five G3P molecules are used in the regeneration stage to regenerate three RuBP molecules, allowing the cycle to continue. Therefore, to produce a net gain of one G3P molecule, the Calvin cycle must complete three full turns."
+  }
+]

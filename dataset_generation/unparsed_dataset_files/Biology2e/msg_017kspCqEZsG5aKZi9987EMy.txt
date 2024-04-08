@@ -1,0 +1,54 @@
+[
+  {
+    "question": "How do scientists distinguish the individual components of cells when viewing a specimen through a light microscope?",
+    "answer": "Scientists use special stains to distinguish the individual components of cells when viewing a specimen through a light microscope. The stains help highlight specific structures within the cells, making them more visible and easier to identify. Without these stains, the cells would appear mostly transparent and their internal components would be difficult to discern."
+  },
+  {
+    "question": "What is considered the basic unit of life?",
+    "answer": "The cell is considered the basic unit of life. All living organisms are composed of one or more cells, which are the smallest structures capable of carrying out the fundamental processes of life, such as metabolism, growth, and reproduction. Cells contain the genetic material and cellular machinery necessary for an organism to function and survive."
+  },
+  {
+    "question": "How do prokaryotes obtain materials and get rid of wastes?",
+    "answer": "Prokaryotes depend on diffusion to obtain some materials and to get rid of wastes. Diffusion is the passive movement of molecules from an area of high concentration to an area of low concentration. Since prokaryotic cells lack membrane-bound organelles, they rely on diffusion across their cell membrane to transport essential molecules into the cell and waste products out of the cell."
+  },
+  {
+    "question": "What is a likely consequence for bacteria that lack fimbriae?",
+    "answer": "Bacteria that lack fimbriae are less likely to adhere to cell surfaces. Fimbriae are thin, hair-like protein structures on the surface of some bacterial cells that help them attach to other cells or surfaces. Without fimbriae, bacteria may have difficulty establishing a stable connection to their host cells or forming biofilms, which can impact their ability to colonize and cause infections."
+  },
+  {
+    "question": "Which of the following is an example of a prokaryotic organism: amoeba, influenza A virus, charophyte algae, or E. coli?",
+    "answer": "E. coli is an example of a prokaryotic organism. Prokaryotes are single-celled organisms that lack a nucleus and other membrane-bound organelles. E. coli is a bacterium that exhibits these characteristics. Amoebae and charophyte algae are eukaryotic organisms, while influenza A virus is a virus and not classified as either prokaryotic or eukaryotic."
+  },
+  {
+    "question": "Which cellular component is surrounded by two phospholipid bilayers?",
+    "answer": "The nucleoplasm, which is the material inside the nucleus, is surrounded by two phospholipid bilayers. These two bilayers make up the nuclear envelope, which separates the nucleus from the cytoplasm. The double membrane structure of the nuclear envelope helps to regulate the passage of molecules between the nucleus and the cytoplasm, maintaining a distinct environment for the cell's genetic material."
+  },
+  {
+    "question": "Why are cellular structures called peroxisomes named as such?",
+    "answer": "Peroxisomes got their name because hydrogen peroxide is produced during their oxidation reactions. These organelles contain enzymes that break down fatty acids and amino acids, generating hydrogen peroxide as a byproduct. The hydrogen peroxide is then decomposed by other enzymes within the peroxisome to prevent cellular damage. The name \"peroxisome\" reflects the organelle's role in both producing and managing hydrogen peroxide."
+  },
+  {
+    "question": "In plant cells, which organelle carries out the function of lysosomes?",
+    "answer": "In plant cells, vacuoles carry out the function of lysosomes. Lysosomes are organelles in animal cells that contain digestive enzymes to break down and recycle cellular waste, debris, and foreign materials. In plant cells, vacuoles perform similar functions, using enzymes to degrade and recycle cellular components. Additionally, vacuoles play a role in storage, turgor pressure maintenance, and pH regulation in plant cells."
+  },
+  {
+    "question": "Which of the following structures is found in both eukaryotic and prokaryotic cells: nucleus, mitochondrion, vacuole, or ribosomes?",
+    "answer": "Ribosomes are found in both eukaryotic and prokaryotic cells. Ribosomes are the sites of protein synthesis, where genetic information is translated into polypeptide chains. They are composed of RNA and protein and are not surrounded by a membrane. While eukaryotic cells have ribosomes in the cytoplasm and rough endoplasmic reticulum, prokaryotic cells have ribosomes dispersed throughout the cytoplasm. The other structures mentioned (nucleus, mitochondrion, and vacuole) are only found in eukaryotic cells."
+  },
+  {
+    "question": "Tay-Sachs disease is a genetic disorder that results in the destruction of neurons due to a buildup of sphingolipids in the cells. Which organelle is most likely malfunctioning in this disease?",
+    "answer": "In Tay-Sachs disease, the lysosomes are most likely malfunctioning. Lysosomes are responsible for breaking down and recycling various cellular components, including lipids like sphingolipids. In Tay-Sachs disease, a genetic mutation leads to a deficiency in the enzyme hexosaminidase A, which is necessary for the breakdown of a specific sphingolipid called GM2 ganglioside. As a result, GM2 ganglioside accumulates in the lysosomes of neurons, eventually leading to cell death and neurological deterioration."
+  },
+  {
+    "question": "Which of the following is not a component of the endomembrane system: mitochondrion, Golgi apparatus, endoplasmic reticulum, or lysosome?",
+    "answer": "The mitochondrion is not a component of the endomembrane system. The endomembrane system is a collection of membrane-bound organelles that work together to modify, package, and transport lipids and proteins within the cell. It includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, lysosomes, and vesicles. Mitochondria, on the other hand, are separate organelles primarily responsible for cellular respiration and ATP production, and they are not directly involved in the processing and transport of lipids and proteins like the organelles of the endomembrane system."
+  },
+  {
+    "question": "What is the term for the process by which a cell engulfs a foreign particle?",
+    "answer": "The process by which a cell engulfs a foreign particle is known as phagocytosis. During phagocytosis, the cell's plasma membrane surrounds and engulfs the particle, forming a vesicle called a phagosome. The phagosome then fuses with a lysosome, which contains digestive enzymes that break down the engulfed material. Phagocytosis is a key mechanism used by immune cells, such as macrophages and neutrophils, to defend the body against invading pathogens and to remove cellular debris."
+  },
+  {
+    "question": "Which type of cell is most likely to have the greatest concentration of smooth endoplasmic reticulum?",
+    "answer": "A cell that makes steroid hormones is most likely to have the greatest concentration of smooth endoplasmic reticulum (SER). The SER is an organelle that plays a crucial role in the synthesis of lipids, including steroid hormones. Cells involved in steroid hormone production, such as those in the gonads and adrenal glands, require an extensive network of SER to meet the demand for these hormones. The SER also functions in detoxification, calcium storage, and carbohydrate metabolism, but steroid hormone synthesis is one of its primary roles in specific cell types."
+  }
+]

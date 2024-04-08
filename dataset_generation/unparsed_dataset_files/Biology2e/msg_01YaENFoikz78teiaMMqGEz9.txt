@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Compare and contrast a human somatic cell to a human gamete.",
+    "answer": "A human somatic cell contains 46 chromosomes (23 pairs) and is diploid (2n). It undergoes mitosis to produce daughter cells that are genetically identical to the parent cell. In contrast, a human gamete (sperm or egg) contains 23 chromosomes and is haploid (1n). Gametes are produced through meiosis, which allows them to have half the number of chromosomes as somatic cells. When two gametes fuse during fertilization, the resulting zygote will have the full complement of 46 chromosomes."
+  },
+  {
+    "question": "What is the relationship between a genome, chromosomes, and genes?",
+    "answer": "A genome is the complete set of genetic material (DNA) in an organism. In eukaryotes, the genome is organized into chromosomes, which are linear, double-stranded DNA molecules. Genes are specific segments of DNA located on chromosomes that code for functional proteins or RNA molecules. In summary, genes are located on chromosomes, and the complete set of chromosomes makes up the genome."
+  },
+  {
+    "question": "Eukaryotic chromosomes are thousands of times longer than a typical cell. Explain how chromosomes can fit inside a eukaryotic nucleus.",
+    "answer": "Eukaryotic chromosomes are tightly packed and condensed to fit inside the nucleus. DNA is wrapped around histone proteins to form nucleosomes, which resemble \"beads on a string.\" These nucleosomes are then coiled into a 30-nm chromatin fiber. During cell division, the chromatin fibers are further condensed by scaffolding proteins, resulting in highly compact metaphase chromosomes. This packaging allows the long DNA molecules to fit within the relatively small space of the nucleus."
+  },
+  {
+    "question": "Briefly describe the events that occur in each phase of interphase.",
+    "answer": "Interphase consists of three phases: G1, S, and G2. In G1 (first gap), the cell grows and prepares for DNA replication. During the S (synthesis) phase, the cell replicates its DNA, resulting in sister chromatids. In G2 (second gap), the cell continues to grow, synthesizes proteins, and prepares for mitosis. Organelles are also duplicated during G2."
+  },
+  {
+    "question": "Chemotherapy drugs such as vincristine and colchicine disrupt mitosis by binding to tubulin and interfering with microtubule assembly and disassembly. Exactly what mitotic structure is targeted by these drugs and what effect would that have on cell division?",
+    "answer": "Vincristine and colchicine target the mitotic spindle, which is composed of microtubules. These drugs bind to tubulin, the subunit of microtubules, and interfere with the assembly and disassembly of the mitotic spindle. As a result, the spindle cannot properly attach to and separate the sister chromatids during mitosis. This disruption leads to cell cycle arrest and eventual cell death, which is the desired effect of these chemotherapy drugs on rapidly dividing cancer cells."
+  },
+  {
+    "question": "Describe the similarities and differences between the cytokinesis mechanisms found in animal cells versus those in plant cells.",
+    "answer": "In both animal and plant cells, cytokinesis occurs after the completion of mitosis. However, the mechanisms differ. In animal cells, a contractile ring of actin filaments forms at the cell equator and contracts inward, forming a cleavage furrow that eventually pinches the cell into two daughter cells. In plant cells, a cell plate forms at the cell equator due to the fusion of Golgi-derived vesicles. The cell plate grows outward until it fuses with the plasma membrane, separating the two daughter cells. The cell plate then develops into a new cell wall between the daughter cells."
+  },
+  {
+    "question": "List some reasons why a cell that has just completed cytokinesis might enter the G0 phase instead of the G1 phase.",
+    "answer": "A cell may enter G0 phase (quiescence) after cytokinesis for several reasons: 1) The cell has reached its terminal differentiation state and no longer needs to divide, such as neurons or muscle cells. 2) The cell is experiencing a lack of nutrients or growth factors necessary for cell division. 3) The cell has reached a high cell density (contact inhibition) and stops dividing to prevent overcrowding. 4) The cell has sustained DNA damage and needs to pause the cell cycle to repair the damage before proceeding with division."
+  },
+  {
+    "question": "What cell-cycle events will be affected in a cell that produces mutated (non-functional) cohesin protein?",
+    "answer": "Cohesin is a protein complex that holds sister chromatids together during the S and G2 phases of the cell cycle. If a cell produces non-functional cohesin, the sister chromatids will not be properly held together. This can lead to premature separation of sister chromatids during metaphase, resulting in unequal distribution of genetic material to the daughter cells (aneuploidy). Consequently, the affected cell may experience genomic instability and abnormal cell division."
+  },
+  {
+    "question": "Describe the general conditions that must be met at each of the three main cell-cycle checkpoints.",
+    "answer": "The three main cell cycle checkpoints are the G1, G2, and M checkpoints. At the G1 checkpoint, the cell ensures that it has reached an appropriate size, has adequate nutrients, and has undamaged DNA before proceeding to S phase. At the G2 checkpoint, the cell confirms that DNA replication is complete and that the DNA is not damaged before entering mitosis. At the M checkpoint (spindle checkpoint), the cell verifies that all sister chromatids are properly attached to the mitotic spindle before proceeding to anaphase. If any of these conditions are not met, the cell cycle will be halted until the issues are resolved or the cell undergoes apoptosis."
+  },
+  {
+    "question": "Compare and contrast the roles of the positive cell-cycle regulators negative regulators.",
+    "answer": "Positive cell cycle regulators, such as cyclins and cyclin-dependent kinases (Cdks), promote the progression of the cell cycle. Cyclins bind to Cdks, forming active complexes that phosphorylate target proteins, which drive the cell through the various phases and checkpoints of the cell cycle. In contrast, negative regulators, such as p53, p21, and retinoblastoma protein (Rb), act as \"brakes\" on the cell cycle. They can halt the cell cycle at specific checkpoints if certain conditions are not met, such as proper cell size, DNA integrity, or environmental factors. Negative regulators help maintain genomic stability and prevent uncontrolled cell division."
+  },
+  {
+    "question": "What steps are necessary for Cdk to become fully active?",
+    "answer": "For a cyclin-dependent kinase (Cdk) to become fully active, it must undergo two steps: 1) Binding to a specific cyclin protein, which is synthesized at a particular stage of the cell cycle. The cyclin-Cdk complex is partially active. 2) Phosphorylation of the Cdk by a Cdk-activating kinase (CAK) at a specific threonine residue. This phosphorylation fully activates the cyclin-Cdk complex, allowing it to phosphorylate downstream target proteins and drive the cell cycle forward."
+  },
+  {
+    "question": "Rb is a negative regulator that blocks the cell cycle at the G1 checkpoint until the cell achieves a requisite size. What molecular mechanism does Rb employ to halt the cell cycle?",
+    "answer": "Retinoblastoma protein (Rb) is a tumor suppressor that regulates the G1/S transition. When Rb is in its active, hypophosphorylated state, it binds to and inhibits transcription factors of the E2F family. E2F transcription factors are required for the expression of genes necessary for DNA replication and cell cycle progression. By sequestering E2F, Rb prevents the transcription of these genes and halts the cell cycle at the G1 checkpoint. Once the cell reaches an appropriate size, Rb is phosphorylated by cyclin-Cdk complexes, causing it to release E2F and allowing the cell to progress into S phase."
+  },
+  {
+    "question": "Outline the steps that lead to a cell becoming cancerous.",
+    "answer": "A cell becomes cancerous through a multi-step process: 1) An initial mutation occurs in a proto-oncogene or tumor suppressor gene, leading to uncontrolled cell growth. 2) Additional mutations accumulate in genes that regulate the cell cycle, DNA repair, or apoptosis, conferring a selective advantage to the mutated cells. 3) The mutated cells escape normal cell cycle checkpoints and divide uncontrollably, forming a tumor. 4) The tumor cells acquire the ability to induce angiogenesis (blood vessel formation) to obtain nutrients and oxygen. 5) Some tumor cells gain the capacity to invade surrounding tissues and metastasize to distant sites in the body, forming secondary tumors. This process is driven by the accumulation of multiple genetic and epigenetic changes that transform a normal cell into a malignant cancer cell."
+  },
+  {
+    "question": "Explain the difference between a proto-oncogene and a tumor-suppressor gene.",
+    "answer": "Proto-oncogenes are normal genes that, when mutated or overexpressed, can become oncogenes, leading to uncontrolled cell growth and division. Proto-oncogenes typically encode proteins that stimulate cell proliferation, such as growth factors, growth factor receptors, or transcription factors. When these genes are altered, they can drive the cell towards a cancerous state. In contrast, tumor suppressor genes encode proteins that inhibit cell division, promote apoptosis, or repair DNA damage. When tumor suppressor genes are mutated or inactivated, their protective functions are lost, allowing cells to divide uncontrollably and accumulate additional mutations. In summary, proto-oncogenes promote cell growth, while tumor suppressor genes inhibit cell growth and maintain genomic stability."
+  },
+  {
+    "question": "List the regulatory mechanisms that might be lost in a cell producing faulty p53.",
+    "answer": "p53 is a crucial tumor suppressor protein that regulates multiple aspects of the cell cycle and maintains genomic stability. If a cell produces faulty p53, several regulatory mechanisms may be lost: 1) Cell cycle arrest at the G1 checkpoint in response to DNA damage, preventing the replication of mutated DNA. 2) Induction of DNA repair pathways to fix damaged DNA before cell division. 3) Initiation of apoptosis (programmed cell death) if the DNA damage is irreparable, eliminating the potential for cancerous growth. 4) Activation of p21, a Cdk inhibitor that halts the cell cycle at the G1/S transition. 5) Inhibition of angiogenesis, which limits the growth of tumors by reducing their blood supply. The loss of these p53-mediated regulatory mechanisms can lead to genomic instability, uncontrolled cell division, and ultimately, cancer development."
+  },
+  {
+    "question": "p53 can trigger apoptosis if certain cell-cycle events fail. How does this regulatory outcome benefit a multicellular organism?",
+    "answer": "The ability of p53 to trigger apoptosis in cells with irreparable DNA damage or failed cell cycle events is crucial for maintaining the overall health of a multicellular organism. By inducing programmed cell death in these abnormal cells, p53 prevents the propagation of mutations and the potential development of cancer. Apoptosis eliminates cells that could otherwise divide uncontrollably and form tumors, which may disrupt normal tissue function and lead to organ failure. Moreover, by removing damaged cells, p53-mediated apoptosis helps maintain genomic stability in the organism as a whole, reducing the risk of passing on harmful mutations to future generations of cells. In essence, the regulatory role of p53 in triggering apoptosis acts as a safeguard against cancer and promotes the overall survival and fitness of the multicellular organism."
+  },
+  {
+    "question": "Name the common components of eukaryotic cell division and binary fission.",
+    "answer": "Eukaryotic cell division (mitosis) and prokaryotic cell division (binary fission) share some common components: 1) Replication of the genetic material (DNA) before cell division occurs. 2) Segregation of the replicated genetic material into two separate locations within the cell. 3) Division of the cytoplasm (cytokinesis) to form two daughter cells, each containing one copy of the genetic material. 4) Separation of the daughter cells, resulting in two genetically identical cells. However, the specific mechanisms and structures involved in these processes differ between eukaryotes and prokaryotes, such as the presence of a nucleus and mitotic spindle in eukaryotes and the absence of these structures in prokaryotes."
+  },
+  {
+    "question": "Describe how the duplicated bacterial chromosomes are distributed into new daughter cells without the direction of the mitotic spindle.",
+    "answer": "In prokaryotes, such as bacteria, the distribution of duplicated chromosomes into daughter cells during binary fission occurs without the presence of a mitotic spindle. Instead, the process is mediated by the following mechanisms: 1) The bacterial chromosome is attached to the plasma membrane at a specific location called the origin of replication. 2) As DNA replication proceeds bidirectionally from the origin, the two copies of the chromosome are pushed apart by the force of the replication process. 3) The growing cell membrane and cell wall synthesis at the division site (septum) help to separate the two chromosomes further. 4) The Z ring, composed of FtsZ proteins (similar to eukaryotic tubulin), forms at the division site and constricts, facilitating the separation of the daughter cells. 5) As the septum forms and the cell wall invaginates, the two chromosomes are physically separated into the two daughter cells. This process ensures that each daughter cell receives one copy of the genetic material without the need for a mitotic spindle apparatus."
+  }
+]
