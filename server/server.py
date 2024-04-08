@@ -1,4 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, ConversationalPipeline, Conversation, pipeline
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 import json
@@ -6,22 +6,19 @@ import sqlite3
 import os
 import torch
 import re
-
-
-import torch
-from transformers import pipeline
 from transformers.utils import is_flash_attn_2_available
 
 app = Flask(__name__)
 CORS(app)
 
-device = "cpu" 
+device = torch.device("cpu")
 dtype = torch.float16
 if torch.cuda.is_available():
-    device = "cuda"
+    device = torch.device("cuda")
     dtype = torch.bfloat16
 elif torch.backends.mps.is_available():
-    device = "mps"
+    device = torch.device("mps")
+    dtype = torch.float32
 
 # todo :: bundle this into a docker image
 # todo :: We can use GPTQ here to compress the model before we even load it. However this requires GCC to be downgraded
@@ -31,24 +28,26 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4",
     bnb_4bit_compute_dtype=dtype,)
 
-model = AutoModelForCausalLM.from_pretrained(
-    "Nexusflow/Starling-LM-7B-beta", 
-    quantization_config=quantization_config,
-    trust_remote_code=True,
-    torch_dtype=dtype,
-    # todo :: This requires GCC to be downgraded as the latest CUDA uses a newer GCC than this can handle
-    # https://huggingface.co/docs/transformers/perf_infer_gpu_one#flashattention-2
-    attn_implementation= "flash_attention_2" if is_flash_attn_2_available() else "sdpa",
-)#.to(device)
-tokenizer = AutoTokenizer.from_pretrained("Nexusflow/Starling-LM-7B-beta", trust_remote_code=True)
+chat_pipeline = ConversationalPipeline(
+    model=AutoModelForCausalLM.from_pretrained(
+        "Nexusflow/Starling-LM-7B-beta", 
+        quantization_config=quantization_config, 
+        attn_implementation="flash_attention_2" if is_flash_attn_2_available() else "sdpa",
+        trust_remote_code=True, 
+        torch_dtype=dtype),
+    tokenizer=AutoTokenizer.from_pretrained(
+        "Nexusflow/Starling-LM-7B-beta", 
+        trust_remote_code=True),
+)
+
+conversations = {}
 
 audio_to_text_pipeline = pipeline(
     "automatic-speech-recognition",
-    model="openai/whisper-large-v3", # select checkpoint from https://huggingface.co/openai/whisper-large-v3#model-details
+    model="openai/whisper-large-v3",
     torch_dtype=dtype,
-    device=device,#"cuda:0",
-    #model_kwargs={"attn_implementation": "sdpa"}
-    model_kwargs={"attn_implementation": "flash_attention_2"} if is_flash_attn_2_available() else {"attn_implementation": "sdpa"},
+    device=device,
+    model_kwargs={"attn_implementation": "flash_attention_2" if is_flash_attn_2_available() else "sdpa"},
 )
 
 def get_db_connection(db_name):
@@ -60,55 +59,45 @@ def get_db_connection(db_name):
                  content TEXT)''')
     return conn
 
-@app.route('/api/chat', methods=['POST'])
-def chat():
-    user_input = request.json['input']
-    db_name = request.json.get('db_name', 'default')
-    lora_name = request.json.get('lora_name', None)
-    
+def load_conversation_from_db(db_name):
     conn = get_db_connection(db_name)
     c = conn.cursor()
     c.execute("SELECT role, content FROM history")
     history = c.fetchall()
 
-    messages = [{
-        "role": "system",
-        "content": "You professional educator who is trying to help a student learn a new concept. Be concise.",
-    }]
-    messages.extend({"role": role, "content": content} for role, content in history)
-    messages.append({"role": "user", "content": user_input})
+    conversation = Conversation(
+        system="You professional educator who is trying to help a student learn a new concept. Be concise."
+    )
 
-    # https://huggingface.co/docs/transformers/main/en/peft
-    # model.load_lora_model(lora_name)
+    for role, content in history:
+        conversation.add_message({"role": role, "content": content})
 
-    # todo (prayag):: Stream the response to the front end
-    # https://mathspp.com/blog/streaming-data-from-flask-to-htmx-using-server-side-events
+    return conversation
 
-    model_inputs = tokenizer.apply_chat_template(
-        messages, 
-        tokenize=True, 
-        add_generation_prompt=True,
-        #return_attention_mask=False,
-        return_tensors="pt",
-        torch_dtype=dtype,)#.to(device)
-    generated_ids = model.generate(
-        model_inputs, 
-        max_new_tokens=512, 
-        do_sample=True)
-    response = tokenizer.batch_decode(
-        generated_ids, 
-        skip_special_tokens=True,)
-        #clean_up_tokenization_spaces=True)
-
-    # Regex pattern to find the last assistant's answer
-    pattern = r"GPT4 Correct Assistant: (.*?)(?=GPT4 Correct User:|$)"
+@app.route('/api/chat', methods=['POST'])
+def chat():
+    user_input = request.json['input']
+    db_name = request.json.get('db_name', 'default')
+    lora = request.json.get('lora', 'normal')
     
-    # Find all matches
-    matches = re.findall(pattern, response[0], re.DOTALL)
+    if db_name not in conversations:
+        conversations[db_name] = load_conversation_from_db(db_name)
     
-    # Extract the last answer if any matches are found
-    last_answer = matches[-1] if matches else None
+    conversation = conversations[db_name]
+    conversation.add_user_input(user_input)
 
+    # if lora :
+    #     chat_pipeline.model.load_adapter(lora)
+    # else:
+    #     chat_pipeline.model.disable_adapter()
+
+    response = chat_pipeline([conversation])
+
+    last_answer = response.generated_responses[-1]
+    conversation.mark_processed()
+
+    conn = get_db_connection(db_name)
+    c = conn.cursor()
     c.execute("INSERT INTO history (role, content) VALUES (?, ?)", ('user', user_input))
     c.execute("INSERT INTO history (role, content) VALUES (?, ?)", ('assistant', last_answer))
     conn.commit()
@@ -117,7 +106,6 @@ def chat():
 
 @app.route('/api/chat/audio', methods=['POST'])
 def chatAudio():
-    # Read the audio file from the request
     audio_file = request.files['messageFile']
     audio_file.save('./tmpAudio.mp3')
     
