@@ -1,4 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, ConversationalPipeline, Conversation, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, ConversationalPipeline, Conversation, pipeline, AutoModelForCTC, AutoProcessor, AutoModelForSpeechSeq2Seq
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 import json
@@ -28,27 +28,33 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4",
     bnb_4bit_compute_dtype=dtype,)
 
+conversations = {}
+
 chat_pipeline = ConversationalPipeline(
     model=AutoModelForCausalLM.from_pretrained(
         "Nexusflow/Starling-LM-7B-beta", 
         quantization_config=quantization_config, 
         attn_implementation="flash_attention_2" if is_flash_attn_2_available() else "sdpa",
         trust_remote_code=True, 
+        low_cpu_mem_usage=True, 
         torch_dtype=dtype),
     tokenizer=AutoTokenizer.from_pretrained(
         "Nexusflow/Starling-LM-7B-beta", 
-        trust_remote_code=True),
-)
-
-conversations = {}
+        trust_remote_code=True),)
 
 audio_to_text_pipeline = pipeline(
     "automatic-speech-recognition",
-    model="openai/whisper-large-v3",
-    torch_dtype=dtype,
-    device=device,
-    model_kwargs={"attn_implementation": "flash_attention_2" if is_flash_attn_2_available() else "sdpa"},
-)
+    model=AutoModelForSpeechSeq2Seq.from_pretrained(
+        "distil-whisper/distil-large-v3", 
+        torch_dtype=dtype, 
+        low_cpu_mem_usage=True, 
+        use_safetensors=True,
+        quantization_config=quantization_config),
+    tokenizer=AutoProcessor.from_pretrained(
+        "distil-whisper/distil-large-v3").tokenizer,
+    feature_extractor=AutoProcessor.from_pretrained(
+        "distil-whisper/distil-large-v3").feature_extractor,
+    torch_dtype=dtype,)
 
 def get_db_connection(db_name):
     db_path = f"{db_name}.db"
