@@ -1,0 +1,53 @@
+[
+  {
+    "question": "What exactly is light energy and how does it travel?",
+    "answer": "Light energy is a form of electromagnetic radiation emitted by the sun and other stars. It travels in waves at extremely high speeds. The distance between the crests of the waves is called the wavelength. Shorter wavelengths have higher energy than longer wavelengths. Visible light that we can see is just a small part of the full electromagnetic spectrum, which also includes radio waves, microwaves, infrared, ultraviolet, X-rays and gamma rays. In photosynthesis, plants capture the energy of visible light waves to power the chemical reactions."
+  },
+  {
+    "question": "How do plants absorb light energy?",
+    "answer": "Plants contain light-absorbing molecules called pigments in their leaves and stems. The main pigments involved in photosynthesis are chlorophyll a, chlorophyll b, and carotenoids. Each pigment can absorb light of specific wavelengths. Chlorophyll a absorbs mainly blue and red light. Chlorophyll b absorbs mainly blue and orange light. Carotenoids absorb mainly blue and green light. The energy from the absorbed light is then passed to the central chlorophyll a molecules in the reaction centers of the photosystems. This excites electrons in chlorophyll a, allowing them to power the light-dependent reactions of photosynthesis."
+  },
+  {
+    "question": "What are the two stages of photosynthesis and what happens in each one?",
+    "answer": "The two main stages of photosynthesis are the light-dependent reactions and the light-independent reactions (also known as the Calvin cycle). In the light-dependent reactions, light energy is absorbed by chlorophyll and converted into chemical energy in the form of ATP and NADPH. Water is split, releasing oxygen gas as a byproduct. In the light-independent reactions, the chemical energy from the light reactions is used to 'fix' carbon dioxide into sugar molecules. This process is called carbon fixation. The key enzyme is RuBisCO. Three cycles of carbon fixation are needed to produce one molecule of the simple sugar G3P. Some G3P is used to regenerate the starting molecule RuBP so the cycle can continue, while the rest is used to make glucose and other organic compounds the plant needs."
+  },
+  {
+    "question": "What are photosystems and how do they work?",
+    "answer": "Photosystems are groups of proteins and light-absorbing pigments built into the thylakoid membranes of chloroplasts. There are two types of photosystems that work together - photosystem II (PSII) and photosystem I (PSI). In both photosystems, light energy is absorbed by the pigment molecules and passed to a central pair of chlorophyll a molecules in the reaction center. This excites an electron to a higher energy level. In PSII, the excited electron is passed to an electron transport chain, while the 'hole' left behind is filled by splitting water, releasing oxygen. The electron arrives at PSI and is re-energized by absorbing more light. Finally it is used to reduce NADP+ into NADPH. Meanwhile, the electron transport chain pumps protons into the thylakoid space, powering ATP synthesis."
+  },
+  {
+    "question": "How do plants use the glucose produced by photosynthesis?",
+    "answer": "The glucose produced by photosynthesis is an energy-rich sugar molecule. Some of it is used directly by the plant cells as a source of chemical energy for cellular respiration and other metabolic processes. Glucose can also be converted into other types of sugars and carbohydrates the plant needs, like cellulose for cell walls and starch for energy storage. Additionally, glucose is a key building block for producing all the other organic molecules required by the plant, such as proteins, lipids, and nucleic acids. So in summary, photosynthesis produces the glucose that allows the plant to grow, develop, and carry out all of its essential life functions."
+  },
+  {
+    "question": "Why is photosynthesis important for life on Earth?",
+    "answer": "Photosynthesis is vitally important for nearly all life on Earth for two key reasons: 1) Photosynthetic organisms like plants and algae are the primary producers that form the base of most food chains and food webs. They use light energy to convert carbon dioxide and water into organic compounds that nearly all other organisms rely on for food and energy. 2) Photosynthesis releases oxygen gas as a byproduct. Over billions of years, photosynthesis produced all the oxygen in Earth's atmosphere. This allowed aerobic organisms like animals and many microbes to evolve and thrive. The oxygen is also needed by plants and algae for cellular respiration. So in summary, photosynthesis sustains life by providing both food and oxygen for the majority of Earth's organisms."
+  },
+  {
+    "question": "What are the reactants and products of photosynthesis?",
+    "answer": "The overall process of photosynthesis can be summed up by this chemical equation: 
+6CO2 + 6H2O + light energy → C6H12O6 + 6O2
+The reactants needed for photosynthesis are:
+• Carbon dioxide (CO2) - taken in from the air or water 
+• Water (H2O) - taken in by the roots
+• Light energy - absorbed by chlorophyll 
+The products made by photosynthesis are:  
+• Glucose (C6H12O6) - a simple sugar that stores chemical energy
+• Oxygen (O2) - released as a gas from splitting water
+To make one molecule of glucose, it takes six molecules of carbon dioxide and six molecules of water, plus light energy. For each glucose produced, six molecules of oxygen gas are released."
+  },
+  {
+    "question": "How does the Calvin cycle work?",
+    "answer": "The Calvin cycle is the second stage of photosynthesis that actually makes the sugar molecules. It is also called the light-independent reactions because it doesn't directly need light (but it does need the ATP and NADPH from the light reactions). The Calvin cycle has three main steps:
+1) Carbon fixation - The enzyme RuBisCO attaches a CO2 molecule to a 5-carbon sugar called RuBP. This makes a 6-carbon compound that quickly splits into two 3-carbon molecules called 3-PGA. 
+2) Reduction - ATP and NADPH from the light reactions are used to convert 3-PGA into another 3-carbon compound called G3P. This 'reduces' the molecules by adding energy. 
+3) Regeneration - Some of the G3P molecules are used to regenerate the RuBP starting molecule so the cycle can repeat. The rest of the G3P is used to make glucose and other organic compounds.
+It takes 3 turns of the Calvin cycle to make one G3P molecule, and 2 G3P molecules combine to make one glucose molecule. The cycle keeps turning as long as the plant has CO2, ATP and NADPH available."
+  },
+  {
+    "question": "How do plants get the carbon dioxide they need for photosynthesis?",
+    "answer": "Plants get the carbon dioxide they need for photosynthesis from the air or water around them. In the leaves of land plants, carbon dioxide enters through tiny pores called stomata and then diffuses through the air spaces until it reaches the chloroplasts in the mesophyll cells. In aquatic plants, carbon dioxide is absorbed directly from the water surrounding the leaves. 
+Once in the chloroplasts, the carbon dioxide molecules are 'fixed' by attaching them to a 5-carbon sugar called RuBP. This is catalyzed by the enzyme RuBisCO in the first step of the Calvin cycle. The Calvin cycle then uses the carbon from carbon dioxide to build sugar molecules like glucose.
+Plants can't store carbon dioxide, so they need a continuous supply of it during the day to keep photosynthesis going. At night, when photosynthesis stops, plants actually release a small amount of carbon dioxide through respiration, just like animals do. But during the day, plants take in much more carbon dioxide than they release."
+  }
+]

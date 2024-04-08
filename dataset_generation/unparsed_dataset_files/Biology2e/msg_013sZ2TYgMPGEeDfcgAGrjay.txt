@@ -1,0 +1,54 @@
+[
+{
+"question": "Do plants and cyanobacteria use the same components to carry out photosynthesis?",
+"answer": "Plants and cyanobacteria both use chlorophyll, carbon dioxide, and water to carry out photosynthesis. However, plants have chloroplasts, while cyanobacteria do not. Cyanobacteria are prokaryotic organisms that lack membrane-bound organelles like chloroplasts. Instead, they have thylakoid membranes that contain chlorophyll and other photosynthetic components directly in their cytoplasm."
+},
+{
+"question": "What are the two main products of photosynthesis?",
+"answer": "The two main products of photosynthesis are sugars/carbohydrates and oxygen. During photosynthesis, light energy is used to convert carbon dioxide and water into glucose (a simple sugar) and oxygen. The glucose is used by the plant for energy and to make other organic compounds, while oxygen is released into the atmosphere as a byproduct."
+},
+{
+"question": "Where do the light-independent reactions of photosynthesis occur in plant cells?",
+"answer": "The light-independent reactions of photosynthesis, also known as the Calvin cycle, take place in the stroma of the chloroplast. The stroma is the fluid-filled space surrounding the thylakoid membranes. This is where carbon dioxide is converted into glucose using the energy-rich molecules ATP and NADPH, which are produced during the light-dependent reactions that occur in the thylakoid membranes."
+},
+{
+"question": "Which statement about thylakoids in eukaryotic cells is incorrect?",
+"answer": "The statement 'The space surrounding thylakoids is called stroma' is incorrect. The space inside the thylakoids is called the thylakoid lumen, while the space surrounding the thylakoids is called the stroma. The other statements are correct: thylakoids are assembled into stacks called grana, they exist as a maze of folded membranes, and they contain chlorophyll, which is essential for the light-dependent reactions of photosynthesis."
+},
+{
+"question": "What would happen if a chloroplast's light-independent enzymes mutated and could not be activated by light?",
+"answer": "If a chloroplast's light-independent enzymes (the enzymes involved in the Calvin cycle) developed a mutation that prevented them from activating in response to light, the most likely result would be the accumulation of ATP and NADPH. These molecules are produced during the light-dependent reactions and are normally used in the Calvin cycle to convert CO2 into glucose. Without the light-independent enzymes functioning properly, ATP and NADPH would build up, as they would not be used in the Calvin cycle."
+},
+{
+"question": "How are NADPH and G3P molecules similar in terms of their role in photosynthesis?",
+"answer": "NADPH and G3P (glyceraldehyde 3-phosphate) molecules are similar in that they both store energy in chemical bonds. NADPH is an energy-rich molecule produced during the light-dependent reactions, and it is used to provide energy for the conversion of CO2 into glucose during the Calvin cycle. G3P is an intermediate product of the Calvin cycle and is used to make glucose and other organic compounds, which store energy in their chemical bonds for later use by the plant."
+},
+{
+"question": "Which of the following is not a component of a photosystem: ATP synthase, antenna molecule, reaction center, or primary electron acceptor?",
+"answer": "ATP synthase is not a component of a photosystem. A photosystem consists of a light-harvesting complex (antenna molecules) and a reaction center. The antenna molecules capture light energy and transfer it to the reaction center, where the primary electron acceptor receives an excited electron. ATP synthase, on the other hand, is an enzyme that uses the proton gradient created during the light-dependent reactions to generate ATP."
+},
+{
+"question": "How many photons of light are needed to reduce one molecule of NADP+ to NADPH during photosynthesis?",
+"answer": "It takes two photons of light to fully reduce one molecule of NADP+ to NADPH during photosynthesis. In the light-dependent reactions, photosystem II absorbs a photon and releases an electron, which is then passed through an electron transport chain to photosystem I. Photosystem I absorbs another photon and releases a second electron. These two electrons, along with a proton (H+), are used to reduce NADP+ to NADPH."
+},
+{
+"question": "Which protein complex in the light-dependent reactions of photosynthesis is not directly involved in creating the conditions necessary for ATP synthesis?",
+"answer": "Photosystem I is not directly involved in creating the conditions necessary for ATP synthesis. The cytochrome complex and photosystem II work together to create a proton gradient across the thylakoid membrane by pumping protons into the thylakoid lumen. This proton gradient is then used by ATP synthase to generate ATP. Photosystem I, on the other hand, is primarily responsible for reducing NADP+ to NADPH, which is used in the Calvin cycle to convert CO2 into glucose."
+},
+{
+"question": "In the light-dependent reactions of photosynthesis, which component is NADPH formed most directly from?",
+"answer": "NADPH is formed most directly from photosystem I. During the light-dependent reactions, photosystem I absorbs a photon of light and releases an electron, which is then transferred to an electron acceptor called ferredoxin. Ferredoxin then passes the electron to the enzyme NADP+ reductase, which combines the electron with a proton (H+) and NADP+ to form NADPH. This process occurs independently of the electron transport chain that connects photosystem II to photosystem I."
+},
+{
+"question": "Three plants of the same species are grown under different colored lights (blue, green, and orange) for the same amount of time. Assuming the plants only use chlorophyll a and b for photosynthesis, which plant would likely grow the most and which would grow the least?",
+"answer": "Assuming the plants only use chlorophyll a and b for photosynthesis, the plant grown under blue light (Plant A) would likely exhibit the most growth, followed by the plant grown under orange light (Plant C), and lastly, the plant grown under green light (Plant B) would show the least growth. This is because chlorophyll a and b primarily absorb blue and red light, while reflecting green light. Blue light has a higher energy content compared to orange light, which would lead to more efficient photosynthesis and growth in Plant A. Plant B, grown under green light, would have the least growth because chlorophyll a and b do not efficiently absorb green light."
+},
+{
+"question": "Plants containing only chlorophyll b are exposed to radiation of different wavelengths: 10nm (x-rays), 450nm (blue light), 670nm (red light), and 800nm (infrared light). Which wavelength of light would result in the plants harnessing the most energy for photosynthesis?",
+"answer": "Among the given wavelengths, plants containing only chlorophyll b would harness the most energy for photosynthesis when exposed to blue light (450nm). Chlorophyll b has a peak absorption in the blue region of the visible light spectrum, around 450-475nm. X-rays (10nm) and infrared light (800nm) have wavelengths outside the visible light spectrum and are not efficiently absorbed by chlorophyll b. Red light (670nm) is not as efficiently absorbed by chlorophyll b compared to blue light, as chlorophyll b has a lower absorption peak in the red region of the spectrum."
+},
+{
+"question": "Which molecule must continuously enter the Calvin cycle for the light-independent reactions of photosynthesis to proceed?",
+"answer": "Carbon dioxide (CO2) must continuously enter the Calvin cycle for the light-independent reactions of photosynthesis to proceed. The primary function of the Calvin cycle is to convert CO2 into organic compounds, such as glucose, using the energy-rich molecules ATP and NADPH produced during the light-dependent reactions. Without a constant supply of CO2, the Calvin cycle would not be able to continue producing glucose and other organic compounds."
+}
+]

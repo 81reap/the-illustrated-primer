@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What is the result of dehydration synthesis?",
+    "answer": "Dehydration synthesis leads to the formation of polymers. In a dehydration synthesis reaction, monomers are joined together, releasing a water molecule in the process. The resulting covalent bond links the monomers into a larger polymer molecule."
+  },
+  {
+    "question": "What type of reaction breaks down polymers into monomers?",
+    "answer": "Hydrolysis is the reaction that breaks down polymers into monomers. During hydrolysis, a water molecule is inserted at the bond between monomers, breaking the covalent bond and separating the polymer into individual monomer units."
+  },
+  {
+    "question": "What type of reaction forms the ester ethyl ethanoate from ethanol (C2H6O) and acetic acid (CH3COOH)?",
+    "answer": "The formation of ethyl ethanoate from ethanol and acetic acid is an example of a condensation reaction. In a condensation reaction, two molecules combine to form a larger molecule, often releasing a small molecule like water in the process. In this case, the -OH group from ethanol and the -COOH group from acetic acid react, releasing water and forming the ester bond in ethyl ethanoate."
+  },
+  {
+    "question": "Which of the following is an example of a monosaccharide: fructose, glucose, or galactose?",
+    "answer": "Fructose, glucose, and galactose are all examples of monosaccharides. Monosaccharides are simple sugars that serve as the building blocks of more complex carbohydrates. They are the smallest units of carbohydrates and cannot be further broken down by hydrolysis."
+  },
+  {
+    "question": "Are cellulose and starch monosaccharides, disaccharides, lipids, or polysaccharides?",
+    "answer": "Cellulose and starch are both examples of polysaccharides. Polysaccharides are long chains of monosaccharides linked together by glycosidic bonds. They are more complex than monosaccharides (single sugars) and disaccharides (double sugars). Cellulose is a structural polysaccharide found in plant cell walls, while starch is an energy storage polysaccharide in plants."
+  },
+  {
+    "question": "Which carbohydrate is found in abundance in plant cell walls?",
+    "answer": "Cellulose is found in abundance in plant cell walls. Cellulose is a structural polysaccharide that provides strength and rigidity to plant cells. It is composed of long chains of glucose monomers linked by β-1,4 glycosidic bonds, which allows the molecules to form strong, linear fibers."
+  },
+  {
+    "question": "What type of bond is formed between glucose and galactose to create lactose?",
+    "answer": "A glycosidic bond is formed between glucose and galactose to create the disaccharide lactose. Glycosidic bonds are covalent bonds that join monosaccharides together to form disaccharides and polysaccharides. In lactose, the glycosidic bond is formed between the #1 carbon of galactose and the #4 carbon of glucose."
+  },
+  {
+    "question": "Which of the following is not a role of carbohydrates in the extracellular matrix: protecting an insect's organs, preventing plant cells from lysing, maintaining fungal spore shape, or providing energy for muscles?",
+    "answer": "Providing energy for muscle movement is not an extracellular matrix role of carbohydrates. The extracellular matrix is the non-cellular component of tissues that provides structural and biochemical support to cells. Carbohydrates in the extracellular matrix, such as chitin in insect exoskeletons, pectin in plant cell walls, and polysaccharides in fungal cell walls, serve protective and structural roles. Providing energy for muscle contraction is a cellular role of carbohydrates, not an extracellular matrix function."
+  },
+  {
+    "question": "Which of the following is not a characteristic of saturated fats: solid at room temperature, single bonds in the carbon chain, usually obtained from animal sources, or dissolves easily in water?",
+    "answer": "Saturated fats do not dissolve easily in water, so this is not a characteristic of saturated fats. Saturated fats are typically solid at room temperature, have single bonds between the carbons in their fatty acid chains, and are usually obtained from animal sources. The presence of only single bonds allows the fatty acid chains to pack closely together, making them solid at room temperature. Saturated fats are non-polar and hydrophobic, which means they do not mix well with water."
+  },
+  {
+    "question": "Phospholipids are important components of which cellular structure?",
+    "answer": "Phospholipids are important components of the plasma membrane of cells. The plasma membrane is a phospholipid bilayer that forms the boundary between the cell's interior and the external environment. Phospholipids have a hydrophilic head and two hydrophobic tails, allowing them to spontaneously arrange into a bilayer with the heads facing the aqueous environment and the tails facing inward. This structure provides a barrier to control what enters and exits the cell while still allowing flexibility and movement."
+  },
+  {
+    "question": "Based on its structure, where is cholesterol found in the plasma membrane?",
+    "answer": "Based on its structure, cholesterol is found within the tail bilayer of the plasma membrane. Cholesterol is a steroid molecule with a hydrophilic head and a hydrophobic body. The hydrophobic portion of cholesterol interacts with the hydrophobic tails of the phospholipids, while the hydrophilic head remains near the phospholipid heads. Cholesterol helps to maintain membrane fluidity and stability by preventing the close packing of phospholipids."
+  },
+  {
+    "question": "What are the monomers that make up proteins called?",
+    "answer": "The monomers that make up proteins are called amino acids. Amino acids are organic molecules that contain an amino group (-NH2), a carboxyl group (-COOH), a hydrogen atom, and a variable side chain (R group) all bonded to a central carbon atom. Proteins are formed by the polymerization of amino acids through peptide bonds, which are covalent bonds between the carboxyl group of one amino acid and the amino group of another."
+  },
+  {
+    "question": "The α-helix and β-pleated sheet are part of which level of protein structure?",
+    "answer": "The α-helix and β-pleated sheet are part of the secondary structure of proteins. Protein structure can be divided into four levels: primary, secondary, tertiary, and quaternary. The primary structure is the linear sequence of amino acids. The secondary structure refers to the local folding of the polypeptide chain into regular structures such as α-helices and β-pleated sheets, which are stabilized by hydrogen bonds between the amino acid residues. The tertiary structure is the overall three-dimensional shape of a single polypeptide chain, and quaternary structure is the arrangement of multiple polypeptide chains into a larger complex."
+  },
+  {
+    "question": "Mad cow disease is caused by misfolded proteins that cause other copies of the protein to misfold. This impacts which level of protein structure?",
+    "answer": "Mad cow disease impacts the tertiary structure of proteins. The tertiary structure refers to the three-dimensional shape of a protein that results from interactions between the side chains (R groups) of the amino acids. Misfolding alters the tertiary structure, changing the shape and often the function of the protein. In mad cow disease, the misfolded prion protein (PrPSc) causes normal prion proteins (PrPC) to misfold and aggregate, leading to the disease's progression and neurodegeneration."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "How is gene expression controlled in eukaryotic cells?",
+    "answer": "Gene expression in eukaryotic cells is controlled at multiple levels, including epigenetic modifications, transcriptional regulation, post-transcriptional processing, translational control, and post-translational modifications. Epigenetic changes involve reversible modifications to histone proteins and DNA that affect chromatin structure and accessibility of genes. Transcription factors bind to regulatory sequences to enhance or repress transcription. Post-transcriptional mechanisms like RNA splicing and stability affect mRNA levels. Translation can be regulated by factors that affect initiation. Finally, proteins can be modified after translation, impacting their function and stability. The multiple levels of control allow for precise regulation of gene expression in response to cellular needs."
+  },
+  {
+    "question": "What does post-translational control of gene expression refer to?",
+    "answer": "Post-translational control refers to the regulation of gene expression that occurs after a protein has been translated from its mRNA. This can involve modifications to the protein itself, such as the addition of phosphate groups, acetyl groups, or ubiquitin tags. These chemical modifications can affect the protein's function, stability, localization, or interactions. Post-translational modifications provide a rapid and reversible way to control protein activity without altering mRNA or protein levels. This allows cells to quickly respond to stimuli or changes in the environment by modulating the properties of existing proteins."
+  },
+  {
+    "question": "How does the regulation of gene expression enable the evolution of more complex organisms?",
+    "answer": "The regulation of gene expression allows cells within a multicellular organism to become specialized for particular functions by expressing different sets of genes, even though they contain the same genome. This enables the formation of diverse cell types like neurons, muscle cells, and epithelial cells that work together to create complex tissues and organs. Gene regulation also allows organisms to conserve energy and resources by only expressing genes when their products are needed, rather than constantly producing all proteins. Together, the specialization of cells and the efficient use of resources through regulated gene expression permits the evolution of increasingly complex body plans and adaptations in multicellular organisms."
+  },
+  {
+    "question": "What happens to the lac operon in E. coli when glucose is absent but lactose is also not present?",
+    "answer": "When glucose is absent but lactose is also not present, the lac operon in E. coli will be repressed. The lac operon is regulated by a dual control mechanism that responds to the presence of glucose and lactose. When glucose levels are low, the CAP (catabolite activator protein) is activated and promotes transcription. However, the lac repressor protein will bind to the operator region and block transcription if lactose is not available to interact with it. Therefore, both the absence of glucose and the presence of lactose are required to fully induce expression of the lac operon genes. If lactose is absent, the operon will remain repressed even if glucose is also absent."
+  },
+  {
+    "question": "How does the lack of a nucleus in prokaryotic cells affect gene expression?",
+    "answer": "In prokaryotic cells, the lack of a nucleus means that transcription and translation can occur simultaneously in the cytoplasm. Since there is no spatial separation between the DNA and ribosomes, mRNA can be translated into protein while it is still being transcribed. This allows gene expression to be primarily controlled at the transcriptional level, as there is little opportunity for post-transcriptional regulation. The coupling of transcription and translation also enables prokaryotes to rapidly respond to environmental changes by quickly producing proteins from newly transcribed mRNA. However, this lack of compartmentalization also limits the complexity of gene regulation compared to eukaryotes."
+  },
+  {
+    "question": "In the ara operon, what is the role of the AraC protein when arabinose is present?",
+    "answer": "In the ara operon, when arabinose is present, the AraC protein acts as both an activator and an inducer. Arabinose binds to AraC, causing it to change shape. This allows AraC to bind to the initiator site and promote transcription of the genes involved in arabinose metabolism. Therefore, AraC is considered an activator because it enhances transcription in the presence of arabinose. It is also an inducer because arabinose is required for AraC to stimulate gene expression. Without arabinose, AraC would not be able to effectively activate the operon."
+  },
+  {
+    "question": "What are epigenetic modifications and how do they affect gene expression?",
+    "answer": "Epigenetic modifications are reversible changes to histone proteins and DNA that do not alter the underlying nucleotide sequence but instead affect the accessibility and structure of chromatin. These modifications include the addition or removal of chemical groups such as methyl or acetyl groups to histone tails or DNA itself. Epigenetic changes can open or close chromatin, making genes more or less accessible to transcription factors and RNA polymerase. For example, histone acetylation generally loosens chromatin and promotes transcription, while DNA methylation often leads to compacted chromatin and gene silencing. By altering the physical state of chromatin, epigenetic modifications provide a dynamic way to control gene expression in response to developmental or environmental cues without changing the genetic code."
+  },
+  {
+    "question": "Which of the following statements about epigenetic changes are true?",
+    "answer": "All of the statements about epigenetic changes are true:
+
+1) Epigenetic modifications can allow DNA to be transcribed by opening up chromatin and making genes accessible to transcriptional machinery. 
+
+2) Histones can be moved along DNA to open or close a chromosomal region. The addition of acetyl groups to histones tends to relax chromatin, while removal of acetyl groups leads to chromatin condensation.
+
+3) Epigenetic changes are often temporary and can be reversed. Unlike permanent mutations to DNA sequence, epigenetic marks like histone modifications and DNA methylation can be added or removed in response to cellular signals.
+
+So in summary, epigenetic changes affect chromatin accessibility to regulate transcription, involve repositioning of histones, and provide a flexible, reversible means of controlling gene expression."
+  },
+  {
+    "question": "What is required for transcription to begin in eukaryotic cells?",
+    "answer": "In eukaryotic cells, the binding of RNA polymerase to the promoter is required for transcription to begin. However, RNA polymerase cannot initiate transcription on its own and needs additional proteins called transcription factors to recognize and bind to specific sequences in the promoter region. General transcription factors help position RNA polymerase at the transcription start site and aid in separating the DNA strands. Specific transcription factors bind to regulatory sequences and can enhance or repress transcription by interacting with the general factors and polymerase. The assembly of this transcription initiation complex via protein-DNA and protein-protein interactions is necessary for RNA polymerase to start synthesizing RNA from the appropriate location."
+  },
+  {
+    "question": "How does the binding of a transcription factor to an enhancer region affect transcription?",
+    "answer": "The binding of a transcription factor to an enhancer region leads to increased transcription of a target gene, even if that gene is located some distance away. Enhancers are regulatory sequences that can be upstream, downstream, or even within the introns of the genes they control. When transcription factors bind to enhancers, they interact with mediator proteins and other factors to form loops in the DNA that bring the enhancer and promoter into close proximity. This allows the transcription factors to stabilize the binding of general factors and RNA polymerase at the promoter, thus increasing the rate of transcription initiation. Enhancer-bound factors can also recruit chromatin remodeling complexes to make the promoter more accessible. Through these long-range interactions, enhancers act as distal control elements to stimulate gene expression."
+  },
+  {
+    "question": "A scientist compares two genes and finds that Gene A's promoter region is much smaller than Gene B's. Which of the scientist's hypotheses about the genes' expression is most likely to be correct?",
+    "answer": "The scientist's hypothesis that transcription of Gene A involves fewer transcription factors is most likely to be correct. The length of the promoter region often correlates with the complexity of regulation, as longer promoters can accommodate binding sites for a greater number of transcription factors. Gene A's smaller promoter suggests that its expression requires fewer protein-DNA interactions and is controlled by a simpler set of regulatory elements. In contrast, Gene B's larger promoter with more potential binding sites implies that it is subject to more elaborate transcriptional control involving multiple factors. The size of the promoter alone does not necessarily predict the level of gene expression or the involvement of enhancers. A more concise promoter may simply reflect streamlined and efficient regulation of Gene A's transcription compared to Gene B."
+  },
+  {
+    "question": "What aspects of gene expression are regulated post-transcriptionally in eukaryotic cells?",
+    "answer": "In eukaryotic cells, several aspects of gene expression are regulated post-transcriptionally, after an RNA molecule has been synthesized but before it is translated into protein. These include:
+
+1) Control of RNA splicing: Alternative splicing of pre-mRNA allows different mature mRNA isoforms to be produced from the same gene. Splicing regulatory proteins can promote or inhibit the usage of particular splice sites.
+
+2) Control of RNA shuttling: The transport of mRNA from the nucleus to the cytoplasm can be regulated by RNA-binding proteins and nuclear export factors. This affects which mRNAs are available for translation.
+
+3) Control of RNA stability: The rate of mRNA degradation influences how long an mRNA persists in the cytoplasm and can be translated. Stability is affected by sequences in the mRNA itself and by RNA-binding proteins or microRNAs that promote or prevent decay.
+
+So by controlling the processing, localization, and lifetime of mRNA molecules, post-transcriptional mechanisms provide additional layers of gene regulation between the initial synthesis of RNA and its ultimate translation into protein."
+  },
+  {
+    "question": "How does the binding of an RNA-binding protein affect the stability of an RNA molecule?",
+    "answer": "The binding of an RNA-binding protein (RBP) to an RNA molecule can either increase or decrease its stability, depending on the specific protein involved. Some RBPs bind to sequences in the 3' untranslated region (UTR) and recruit enzymes that degrade the mRNA, thus decreasing its stability and reducing the amount of protein that can be produced from it. Other RBPs bind to the 5' or 3' UTR and physically block the attachment of decay enzymes or microRNAs that would otherwise promote degradation, thereby increasing mRNA stability and allowing more protein synthesis. The same RBP can sometimes have opposite effects depending on where in the mRNA it binds or what other proteins are present. By stabilizing or destabilizing mRNAs, RBPs provide a way to post-transcriptionally adjust gene expression in response to developmental or environmental signals."
+  },
+  {
+    "question": "Based on the structure of an unprocessed pre-mRNA transcript, which of the following could not be a possible length of the mature mRNA after splicing?",
+    "answer": "The 180 bp length could not be a possible size of the mature mRNA after splicing of the pre-mRNA shown in the diagram. The pre-mRNA contains two exons of 50 bp and 100 bp separated by a 30 bp intron. During splicing, the intron will be excised and the two exons will be ligated together to form the mature mRNA. So the final mRNA molecule could be either 150 bp (50 bp + 100 bp), 100 bp (just the second exon), or 50 bp (just the first exon) depending on which exons are retained. A size of 205 bp is also possible if additional sequences are added, such as a 5' cap and poly-A tail. However, there is no combination of the exons and intron shown that could yield a 180 bp product after splicing."
+  },
+  {
+    "question": "What is one potential evolutionary advantage of alternative splicing of mRNA?",
+    "answer": "One evolutionary advantage of alternative splicing is that it allows different protein isoforms to be expressed in different tissues from the same gene without requiring an increase in genome size. By using various combinations of exons, a single gene can encode multiple related proteins with distinct functions that are suited to the needs of particular cell types. This expands the diversity of the proteome without adding to the number of genes and amount of DNA that must be maintained. Alternative splicing provides a more efficient way to generate phenotypic complexity compared to gene duplication, as new splice patterns can arise via relatively small changes to regulatory sequences rather than wholesale copying of genes. The ability to express splice variants in a tissue-specific manner also allows fine-tuning of gene function during development and in response to environmental cues."
+  },
+  {
+    "question": "What cellular processes can be affected by post-translational modifications to proteins?",
+    "answer": "Post-translational modifications (PTMs) to proteins can affect a wide range of cellular processes, including:
+
+1) Protein function: The addition or removal of chemical groups can change a protein's activity, such as increasing or decreasing its enzymatic ability, altering its binding to other molecules, or modifying its channel properties.
+
+2) Transcriptional regulation: PTMs to histones and transcription factors can promote or inhibit gene expression by altering chromatin accessibility or the ability to form active transcriptional complexes.
+
+3) Chromatin modification: Histone proteins can undergo PTMs like acetylation, methylation, and phosphorylation which affect their interactions with DNA and the recruitment of additional regulatory proteins to modify chromatin structure.
+
+4) Protein stability: Some PTMs mark proteins for degradation by the proteasome, while others increase protein stability by blocking degradation signals.
+
+5) Protein localization: PTMs can affect where a protein is directed within the cell, such as to the nucleus, cell membrane, or organelles.
+
+So by dynamically modifying protein structure and interactions, PTMs serve as a rapid and reversible way to regulate many aspects of cell behavior beyond just gene expression."
+  },
+  {
+    "question": "How would a mutation that eliminates the GTP hydrolysis activity of eIF-2 affect the process of translation?",
+    "answer": "A mutation that eliminates the ability of eIF-2 to hydrolyze GTP would prevent translation initiation complexes from properly assembling on the mRNA. During normal translation initiation, the small ribosomal subunit binds to a ternary complex composed of eIF-2, GTP, and a special initiator tRNA charged with methionine. This complex then scans along the mRNA until it locates a start codon. Upon start codon recognition, the GTP is hydrolyzed, the initiation factors are released, and the large ribosomal subunit joins to begin translation elongation. If eIF-2 cannot hydrolyze GTP, it will remain tightly bound to the small ribosome subunit and prevent its association with the large subunit. The inability to release eIF-2 and other initiation factors will trap the small subunit in an unproductive state and block further steps in translation. Therefore, a mutant eIF-2 that lacks GTPase activity would substantially decrease the overall rate of protein synthesis by interfering with a key step in the initiation pathway."
+  },
+  {
+    "question": "What is the term for genes that can cause cancer when mutated or expressed at high levels?",
+    "answer": "Genes that have the potential to cause cancer when they are mutated or overexpressed are called oncogenes. These genes typically encode proteins that stimulate cell division, inhibit cell differentiation, or prevent cell death. In their normal form, called proto-oncogenes, they play important roles in regulating cell growth and development. However, when proto-oncogenes are altered by mutations that increase their activity or expression, they become oncogenes that can drive the uncontrolled cell proliferation characteristic of cancer. Common mechanisms of oncogene activation include point mutations that cause hyperactive proteins, chromosomal translocations that bring a gene under the control of an aberrantly active promoter, and gene amplifications that lead to extra copies of the gene being expressed. In contrast to oncogenes, tumor suppressor genes normally restrain cell growth and division, and their loss of function through mutation or deletion can also contribute to cancer development."
+  }
+]

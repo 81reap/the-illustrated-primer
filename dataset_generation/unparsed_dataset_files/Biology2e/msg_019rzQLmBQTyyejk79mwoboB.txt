@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Why can't molecules that bind to cell surface receptors enter the cell directly?",
+    "answer": "Molecules that bind to cell surface receptors are typically hydrophilic and cannot pass through the hydrophobic interior of the plasma membrane. The hydrophobic nature of the membrane prevents these ligands from entering the cell directly. Instead, they bind to the extracellular domain of the receptor, initiating signaling cascades within the cell without actually entering the cell themselves."
+  },
+  {
+    "question": "What is an example of endocrine signaling in the human body?",
+    "answer": "The secretion of hormones by the pituitary gland is an example of endocrine signaling in the human body. In endocrine signaling, signaling molecules called hormones are released by endocrine cells and travel through the bloodstream to reach target cells in distant parts of the body. This allows for communication and coordination between different organs and tissues."
+  },
+  {
+    "question": "Why do cells need ion channels to move ions across the membrane?",
+    "answer": "Cells need ion channels to transport ions across the membrane because ions are charged particles that cannot diffuse through the hydrophobic interior of the lipid bilayer. The cell membrane is composed of a phospholipid bilayer with a hydrophobic core that acts as a barrier to charged particles like ions. Ion channels provide a hydrophilic pathway for ions to move through the membrane while still maintaining the barrier function of the lipid bilayer."
+  },
+  {
+    "question": "What makes endocrine signals slower than paracrine signals?",
+    "answer": "Endocrine signals are transmitted more slowly than paracrine signals because the ligands (signaling molecules) are transported through the bloodstream and travel greater distances to reach their target cells. In contrast, paracrine signaling involves local communication between cells that are close together, allowing for faster signal transmission. The distance the signal needs to travel is the main factor contributing to the slower speed of endocrine signaling compared to paracrine signaling."
+  },
+  {
+    "question": "If a small, water-soluble molecule turns off gene transcription in a cell, what type of receptor is it likely binding to?",
+    "answer": "If a small, water-soluble molecule turns off gene transcription when added to a dish of cells, it is likely binding to an intracellular receptor. Intracellular receptors are located inside the cell and can directly influence gene expression when activated by their ligands. Small, hydrophobic molecules can pass through the cell membrane and bind these receptors, leading to changes in transcription. Cell surface receptors, on the other hand, rely on signaling cascades to indirectly affect gene expression and would not be directly responsible for turning off transcription."
+  },
+  {
+    "question": "What is the source of the second messengers DAG and IP3 in cell signaling?",
+    "answer": "The second messengers DAG (diacylglycerol) and IP3 (inositol triphosphate) are formed by the cleavage of the phospholipid PIP2 (phosphatidylinositol 4,5-bisphosphate). When certain cell surface receptors are activated, they trigger the activation of the enzyme phospholipase C, which cleaves PIP2 into DAG and IP3. These molecules then go on to activate other signaling pathways within the cell. So PIP2, a component of the cell membrane, is the source of these important second messengers."
+  },
+  {
+    "question": "What makes the amino acids serine, threonine, and tyrosine able to be phosphorylated?",
+    "answer": "The amino acids serine, threonine, and tyrosine can be phosphorylated because they contain a hydroxyl (-OH) group in their side chains. The hydroxyl group provides a site for a phosphate group to be added by a kinase enzyme. Other amino acids lack this hydroxyl group and therefore cannot be phosphorylated. The addition of a negatively charged phosphate group to these amino acids changes the structure and function of the protein, often activating or inactivating it, which is a key mechanism in many cell signaling pathways."
+  },
+  {
+    "question": "How would a mutation preventing GTP hydrolysis in a G-protein alpha subunit affect the allergic response triggered by histamine binding to the H1 receptor?",
+    "answer": "If a mutation in the alpha subunit of the G-protein associated with the H1 histamine receptor prevented the hydrolysis of GTP, the allergic response would be more severe compared to normal G-protein signaling. Normally, the alpha subunit hydrolyzes GTP to GDP, which leads to the inactivation of the G-protein and termination of the signal. If GTP hydrolysis is prevented, the G-protein will remain in its active state, continuously stimulating the downstream signaling pathway. This would lead to a prolonged and exaggerated allergic response, with more severe itchiness and airway constriction."
+  },
+  {
+    "question": "How would a mutation in the EGFR transmembrane region that prevents dimerization affect EGF signaling?",
+    "answer": "A mutation in the transmembrane region of EGFR (epidermal growth factor receptor) that eliminates its ability to dimerize after ligand binding would likely result in EGF signaling cascades being active for a shorter period of time in the cell. Dimerization of EGFR is necessary for the stabilization of the active receptor complex and the full activation of its intracellular kinase domains. Without dimerization, the receptor would be less stable and more prone to inactivation, leading to a shorter duration of signaling. The overall strength of the signal would also be reduced, as dimerization amplifies the initial signal from ligand binding."
+  },
+  {
+    "question": "What does a phosphatase enzyme do in a cell?",
+    "answer": "A phosphatase is an enzyme that removes phosphate groups from phosphorylated amino acid residues in proteins. Many cell signaling pathways involve the addition of phosphate groups to serine, threonine, or tyrosine residues by kinase enzymes, which can activate or inactivate the target protein. Phosphatases reverse this process by removing those phosphate groups, thereby regulating the activity of the protein and modulating the signaling pathway. This removal of phosphate groups is called dephosphorylation and is an important mechanism for turning off or resetting signaling cascades in the cell."
+  },
+  {
+    "question": "How does the NF-κB protein promote gene expression in a cell?",
+    "answer": "NF-κB promotes gene expression by acting as a transcription factor that binds to DNA and stimulates the transcription of specific genes. Normally, NF-κB is bound to an inhibitor protein called IκB, which keeps it inactive in the cytoplasm. However, when an appropriate signal is received, IκB is phosphorylated by a kinase, causing it to dissociate from NF-κB. The free NF-κB can then translocate into the nucleus, bind to specific DNA sequences, and promote the transcription of target genes. This mechanism allows NF-κB to directly regulate gene expression in response to cell signaling events."
+  },
+  {
+    "question": "What are some cellular conditions that can trigger apoptosis?",
+    "answer": "Apoptosis, or programmed cell death, can be triggered by various cellular conditions. These include when the cell is damaged beyond repair, when it is infected by a virus, or when it is no longer needed by the organism. Damage to the cell's DNA or other critical components can activate internal checkpoints that induce apoptosis to prevent the cell from becoming cancerous or dysfunctional. Viral infection can also trigger apoptosis as a defense mechanism to limit the spread of the virus. Finally, during development or tissue turnover, cells that are no longer necessary undergo apoptosis to maintain proper tissue organization and function."
+  },
+  {
+    "question": "What happens when an inhibitor binds to an enzyme?",
+    "answer": "When an inhibitor binds to an enzyme, the enzyme is inactivated and unable to perform its normal function. Inhibitors are molecules that attach to an enzyme's active site or another region and change its conformation, preventing it from binding to its substrate or catalyzing its reaction. This inhibition can be reversible or irreversible depending on the type of inhibitor and its mode of action. By inactivating key enzymes, inhibitors serve as important regulators of enzymatic activity in the cell and can be used to modulate metabolic pathways and signaling cascades."
+  },
+  {
+    "question": "How does the role of protein kinase C (PKC) differ in growth factor signaling pathways compared to immune response pathways?",
+    "answer": "Protein kinase C (PKC) plays different roles in growth factor signaling pathways compared to immune response pathways. In growth factor signaling, PKC is typically activated by second messengers like diacylglycerol (DAG) and calcium ions, which are generated in response to growth factor binding to cell surface receptors. The activated PKC then phosphorylates downstream targets that promote cell growth and proliferation. However, in immune response pathways, PKC often interacts with inhibitory proteins that dampen the immune response. In these cases, PKC may phosphorylate and activate inhibitors of immune signaling, helping to prevent an overactive or prolonged inflammatory response that could be harmful to the body."
+  },
+  {
+    "question": "What could cause a cancer cell to be resistant to apoptosis?",
+    "answer": "There are several potential causes for a cancer cell to be resistant to apoptosis, or programmed cell death. One possibility is that the cell has a mutation that prevents the initiation of apoptosis signaling, even in the presence of apoptotic stimuli. This could involve mutations in genes that code for pro-apoptotic proteins or regulators of the apoptotic pathway. Another potential cause is that the cell has lost expression of the receptor for the apoptosis-inducing ligand, making it unresponsive to external death signals. Finally, the cancer cell may overexpress growth factor pathways that inhibit apoptosis, allowing it to survive and proliferate despite internal or external cues to die. Any of these mechanisms, or a combination of them, could explain a cancer cell's resistance to apoptosis."
+  },
+  {
+    "question": "What type of molecule acts as a signaling molecule in yeast cells?",
+    "answer": "In yeast cells, the signaling molecules used for communication are called mating factors. These are small peptides secreted by yeast cells to signal their mating readiness to potential partners. When a yeast cell detects the mating factor of a compatible mating type, it triggers a signaling cascade that prepares the cell for mating, including arresting the cell cycle and forming a mating projection towards the source of the mating factor. This signaling system allows yeast cells to coordinate their mating behavior and efficiently find compatible partners for sexual reproduction."
+  },
+  {
+    "question": "What triggers the start of quorum sensing in bacteria?",
+    "answer": "Quorum sensing in bacteria is triggered when a sufficient number of bacteria are present in a given area. Bacteria constantly secrete small signaling molecules called autoinducers, which accumulate in the environment as the bacterial population grows. When the concentration of autoinducers reaches a certain threshold, it indicates that a \"quorum\" of bacteria has been reached. The bacteria detect this high level of autoinducers and respond by activating specific genes that allow for coordinated behaviors, such as biofilm formation, virulence factor production, or bioluminescence. This density-dependent signaling allows bacteria to synchronize their activities and work together as a community."
+  },
+  {
+    "question": "What would be the best approach for a doctor to prevent bacterial biofilms from forming on artificial joints?",
+    "answer": "The best approach for a doctor to prevent bacterial biofilms from forming on artificial joints would be to inhibit quorum sensing among the bacteria. Biofilm formation is often regulated by quorum sensing, which allows bacteria to coordinate their behavior and form structured communities on surfaces. By disrupting the quorum sensing signals, the doctor could prevent the bacteria from communicating with each other and initiating biofilm formation. This could involve using quorum sensing inhibitors, which are molecules that interfere with the production, secretion, or reception of autoinducers. Preventing biofilm formation in this way would be more effective than trying to eliminate bacteria with antibiotics, as biofilms are often resistant to antibiotic treatment. Targeting quorum sensing would stop the problem at its source and maintain the integrity of the artificial joint."
+  }
+]
