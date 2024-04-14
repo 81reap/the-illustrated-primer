@@ -37,7 +37,8 @@ chat_pipeline = ConversationalPipeline(
         attn_implementation="flash_attention_2" if is_flash_attn_2_available() else "sdpa",
         trust_remote_code=True, 
         low_cpu_mem_usage=True, 
-        torch_dtype=dtype),
+        torch_dtype=dtype,
+        device_map="auto"),
     tokenizer=AutoTokenizer.from_pretrained(
         "Nexusflow/Starling-LM-7B-beta", 
         trust_remote_code=True),)
@@ -49,12 +50,13 @@ audio_to_text_pipeline = pipeline(
         torch_dtype=dtype, 
         low_cpu_mem_usage=True, 
         use_safetensors=True,
-        quantization_config=quantization_config),
+        quantization_config=quantization_config,),
     tokenizer=AutoProcessor.from_pretrained(
         "distil-whisper/distil-large-v3").tokenizer,
     feature_extractor=AutoProcessor.from_pretrained(
         "distil-whisper/distil-large-v3").feature_extractor,
-    torch_dtype=dtype,)
+    torch_dtype=dtype,
+    model_kwargs={"attn_implementation": "flash_attention_2" if is_flash_attn_2_available() else "sdpa"},)
 
 def get_db_connection(db_name):
     db_path = f"{db_name}.db"
@@ -119,10 +121,19 @@ def chatAudio():
         './tmpAudio.mp3',
         chunk_length_s=30,
         batch_size=24,
-        return_timestamps=True,
-    )
+        return_timestamps=True,)
+
+    # todo :: see if there is a better way than few shot prompting
+    prompt = Conversation(system="Formulate a question for an LLM based on the provided audio transcript. Pretend that you are the user who has asked this. Do let the user know EVER that you are an LLM asking a quesiton, just repharase the questions. Be concise. Condense long questions into a simpler smaller one. ONLY RETURN ONE QUESTION. DO NOT INCLUDE SUMMARIES.")
+    prompt.add_message({"role":"user", "content":"The recent advancements in artificial intelligence have raised ethical concerns regarding privacy and autonomy."})
+    prompt.add_message({"role":"assistant", "content":"What are the ethical concerns associated with recent advancements in artificial intelligence, particularly in terms of privacy and autonomy?"})
+    prompt.add_message({"role":"user", "content":"The economic impact of climate change is becoming increasingly significant, with potential effects on agriculture, infrastructure, and overall global stability."})
+    prompt.add_message({"role":"assistant", "content":"What are the potential economic impacts of climate change on agriculture and infrastructure, and how might they affect global stability?"})
+    prompt.add_message({"role":"user", "content":outputs['text']})
+
+    response = chat_pipeline([prompt])
     
-    return jsonify({'response': outputs['text']})
+    return jsonify({'response': response.generated_responses[-1]})
 
 @app.route('/api/history', methods=['GET'])
 def get_history():
