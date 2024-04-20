@@ -1,0 +1,71 @@
+name: Validate Pull Request Title
+
+on:
+  pull_request:
+    types: [opened, edited]
+    branches:
+      - main
+
+jobs:
+  validate_title:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check PR Title
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const prNumber = context.payload.pull_request.number;
+          const { data: pullRequest } = await github.rest.pulls.get({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: prNumber
+          });
+          
+          const prTitle = pullRequest.title;
+          const allowedPrefixes = ['BREAKING CHANGE', 'feat', 'feature', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'chore'];
+          
+          const hasAllowedPrefix = allowedPrefixes.some(prefix => prTitle.toString().toLowerCase().startsWith(prefix.toString().toLowerCase()));
+          
+          if (!hasAllowedPrefix) {
+            const message = String.raw`
+              Hi there! 👋
+              It looks like your pull request title doesn't follow our semantic versioning conventions [MAJOR.MINOR.PATCH]
+              Please update the pull request title to include one of the following prefixes:
+              
+              [MAJOR RELEASES]
+              - 'BREAKING CHANGE': For changes that introduce breaking changes and require a major version bump.
+              
+              [MINOR RELEASES]
+              - 'feat' or 'feature': For new features or enhancements that require a minor version bump.
+              
+              [PATCH RELEASES]
+              - 'fix': For bug fixes or corrections that require a patch version bump.
+              - 'docs': For documentation updates.
+              - 'style': For code style changes or formatting.
+              - 'refactor': For code refactoring without introducing new features or fixing bugs.
+              - 'perf': For performance improvements.
+              - 'test': For adding or updating tests.
+              - 'chore': For other non-breaking changes, such as updating dependencies or build tasks.
+              
+              Examples of valid pull request titles:
+              - "feat: Add user authentication"
+              - "fix: Resolve database connection issue"
+              - "docs: Update README with new instructions"
+              
+              Please update your pull request title accordingly. 
+              If you have any questions or need assistance, feel free to reach out to the project maintainers.
+              
+              Thanks for your contribution! 😊
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
+            
+            throw new Error('Pull request title does not follow semantic versioning conventions.');
+          }
