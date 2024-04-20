@@ -1,35 +1,41 @@
 # The Illustrated Primer Server
 
-This is the code for a Flask based inference endpoint of Mistral 7B + our custom Lora. 
+This is the code for a Quart based inference endpoint. It uses ::
+- LLAMA 3 8B + our custom Lora (wip)
+- Distill Whisper
 
-## Setup + Installation
+## Setup + Install
+
 ```bash
-# setting up the env
+# install libsql from here https://github.com/tursodatabase/libsql/releases
+$ sqld --db-path ./data --http-listen-addr 0.0.0.0:8085 --admin-listen-addr 0.0.0.0:8580 --enable-namespaces
+
+# run server
+$ huggingface-cli login
 $ python3 -m venv server
 $ source server/bin/activate
-$ pip install flask transformers bitsandbytes accelerate torch torchvision torchaudio optimum flask-cors soundfile wheel
-$ pip install flash-attn --no-build-isolation
-$ python3 server.py 
-# [optional]if you are getting precision errors then add these flags --precision full --no-half
-$ deactivate
+$ pip install -r requirements.txt
+$ export QUART_APP=server:app && quart run --host 0.0.0.0 --port 5000
 
-# serve the server with flask
-$ flask --app server run --host=0.0.0.0
-# [optional] to debug add the --debug flag
-
-# serve the server with a systemd service
-$ vim /etc/systemd/system/unicc-flask.service
-$ systemctl daemon-reload
-$ systemctl enable unicc-flask.service
-$ systemctl start unicc-flask.service
-
-# test the chat endpoint
+# test creation endpoint
 $ curl -X POST -H "Content-Type: application/json" -d '{
-  "input": "INPUT",
-  "db_name": "CONVERSATION_DATABASE_NAME",
+  "user_uuid": "1234"
+}' http://100.94.67.41:5000/api/create_user 
+# test chat endpoint
+$ curl -X POST -H "Content-Type: application/json" -d '{
+  "input": "ELI5 :: String Theory",
+  "user_uuid": "1234",
+  "channel": "default",
+  "thread": "default",
   "lora_name": null
-}' http://100.100.11.57:5000/api/chat 
-
+}' http://100.94.67.41:5000/api/chat 
 # test the audio chat endpoint
 $ curl -X POST -F "messageFile=@/Users/prayagbhakar/Downloads/DIALOGUE.mp3" http://100.94.67.41:5000/api/chat/audio
+# test history endpoint
+$ curl 'http://100.94.67.41:5000/api/history?user_uuid=1234'
 ```
+
+## Resources
+- https://quart.palletsprojects.com/en/latest/reference/cheatsheet.html
+- https://github.com/tursodatabase/libsql
+- https://github.com/tursodatabase/libsql-client-py
