@@ -1,0 +1,20 @@
+# general deps
+wheel
+
+# API Serving
+Quart 
+quart_cors
+libsql_client
+soundfile
+
+# ML Stuffs
+transformers 
+torch 
+torchvision 
+torchaudio 
+
+# ML Speedups
+bitsandbytes 
+accelerate 
+optimum 
+flash-attn --no-build-isolation
