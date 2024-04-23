@@ -1,5 +1,6 @@
 # general deps
 wheel
+setuptools
 
 # API Serving
 Quart 
@@ -17,4 +18,5 @@ torchaudio
 bitsandbytes 
 accelerate 
 optimum 
-flash-attn --no-build-isolation
+#flash-attn, --no-build-isolation
+
