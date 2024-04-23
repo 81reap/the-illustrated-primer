@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: primer
+spec:
+  containers:
+  - name: libsql
+    image: libsql
+    volumeMounts:
+    - name: data-volume
+      mountPath: /data
+    build:
+      context: .
+      dockerfile: libsql.Dockerfile
+  - name: server
+    image: server
+    ports:
+    - containerPort: 5000
+      hostPort: 5000
+    env:
+    - name: HF_TOKEN
+      value: "hf_xd..."
+    volumeMounts:
+    - name: cache-volume
+      mountPath: /root/.cache/huggingface
+    securityContext:
+      privileged: true
+      allowPrivilegeEscalation: true
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+  volumes:
+  - name: data-volume
+    hostPath:
+      path: /mnt/black_hole/apps/primer
+  - name: cache-volume
+    hostPath:
+      path: /home/reap/.cache/huggingface
+  restartPolicy: Never
+
