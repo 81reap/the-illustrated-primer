@@ -100,7 +100,7 @@ async def create_user():
     # Async HTTP session to communicate with the admin API
     async with aiohttp.ClientSession() as session:
         # Create the namespace via the admin API
-        async with session.post(f"http://127.0.0.1:8580/v1/namespaces/{user_uuid}/create", json={}) as response:
+        async with session.post(f"http://localhost:8580/v1/namespaces/{user_uuid}/create", json={}) as response:
             if response.status != 200:
                 return jsonify({'error': 'Failed to create namespace'}), 500
 
