@@ -7,15 +7,9 @@ This is the code for a Quart based inference endpoint. It uses ::
 ## Setup + Install
 
 ```bash
-# install libsql from here https://github.com/tursodatabase/libsql/releases
-$ sqld --db-path ./data --http-listen-addr 0.0.0.0:8085 --admin-listen-addr 0.0.0.0:8580 --enable-namespaces
-
-# run server
-$ huggingface-cli login
-$ python3 -m venv server
-$ source server/bin/activate
-$ pip install -r requirements.txt
-$ export QUART_APP=server:app && quart run --host 0.0.0.0 --port 5000
+podman build -t libsql -f libsql.Dockerfile .
+podman build -t server -f server.Dockerfile .
+podman play kube pod.primer.yaml 
 
 # test creation endpoint
 $ curl -X POST -H "Content-Type: application/json" -d '{
@@ -39,3 +33,5 @@ $ curl 'http://100.94.67.41:5000/api/history?user_uuid=1234'
 - https://quart.palletsprojects.com/en/latest/reference/cheatsheet.html
 - https://github.com/tursodatabase/libsql
 - https://github.com/tursodatabase/libsql-client-py
+- https://huggingface.co/docs/hub/en/security-tokens
+- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/cdi-support.html
