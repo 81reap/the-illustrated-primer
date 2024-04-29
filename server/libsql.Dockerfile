@@ -11,4 +11,8 @@ VOLUME /data
 
 EXPOSE 8085 8580 5001
 
-CMD sqld --db-path $DB_PATH --http-listen-addr $HTTP_LISTEN_ADDR --admin-listen-addr $ADMIN_LISTEN_ADDR --enable-namespaces --grpc-listen-addr $GRPC_LISTEN_ADDR
+CMD sqld --db-path $DB_PATH \
+  --http-listen-addr $HTTP_LISTEN_ADDR \
+  --admin-listen-addr $ADMIN_LISTEN_ADDR \
+  --grpc-listen-addr $GRPC_LISTEN_ADDR 
+  #--enable-namespaces
