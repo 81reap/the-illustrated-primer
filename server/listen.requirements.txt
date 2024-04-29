@@ -1,0 +1,8 @@
+wheel
+quart
+quart-cors
+transformers
+torch
+bitsandbytes
+accelerate
+pydub
