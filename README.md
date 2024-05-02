@@ -40,4 +40,5 @@ This platform is suitable for:
 
 - `dataset_generation/`: Scripts and tools used for scraping and processing educational content.
 - `model_training/`: Code and datasets related to LLM training and fine-tuning.
-- `server/`: The core AI-driven content generation system + Front-end interface for interacting with the platform.
+- `server/`: The server side AI-driven content generation system + libSQL DB.
+- `frontend/`: The Front-end interface for interacting with the platform. Will eventually support local llm infrenceing.
